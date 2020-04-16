@@ -1,0 +1,14 @@
+unit uAviao;
+
+interface
+
+ type
+  TAviao = class
+  Descricao : String;
+  Capacidade : integer;
+  Quilometragem : integer;
+end;
+
+implementation
+
+end.

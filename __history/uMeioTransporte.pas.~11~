@@ -1,0 +1,18 @@
+unit uMeioTransporte;
+
+interface
+
+type
+  TMeioTransporte = class
+    Descricao: string;
+    Capacidade: integer;
+    procedure Mover();
+  end;
+
+implementation
+
+{ TMeioTransporte }
+
+{ TMeioTransporte }
+
+end.

@@ -1,0 +1,17 @@
+unit uMeioTransporte;
+
+interface
+
+type
+  TMeioTransporte = class
+    Descricao: string;
+    Capacidade: integer;
+  end;
+
+implementation
+
+{ TMeioTransporte }
+
+{ TMeioTransporte }
+
+end.

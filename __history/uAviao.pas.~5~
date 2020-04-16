@@ -1,0 +1,17 @@
+unit uAviao;
+
+interface
+
+uses Dialogs;
+
+ type
+  TAviao = class
+  Descricao : String;
+  Capacidade : integer;
+  HorasVoo : integer;
+  procedure Mover;
+end;
+
+implementation
+
+end.
