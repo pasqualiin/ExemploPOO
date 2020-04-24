@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2020/04/23 13:54:46.109,=rtl.dcp</Transaction>
-    <Transaction>2020/04/23 13:55:54.113,C:\Users\guilh\Desktop\Projetos\Exemplo_POO\pkPessoa.dproj=E:\Package1.dproj</Transaction>
-    <Transaction>2020/04/23 14:25:06.545,=C:\Users\guilh\Desktop\Projetos\Exemplo_POO\uPessoa.pas</Transaction>
+	<Transactions>
+    <Transaction>2020/04/23 13:54:46.000.109,=rtl.dcp</Transaction>
+    <Transaction>2020/04/23 13:55:54.000.113,E:\Package1.dproj=C:\Users\guilh\Desktop\Projetos\Exemplo_POO\pkPessoa.dproj</Transaction>
+    <Transaction>2020/04/23 14:25:06.000.545,=C:\Users\guilh\Desktop\Projetos\Exemplo_POO\uPessoa.pas</Transaction>
+    <Transaction>2020/04/23 15:01:34.935,=C:\Users\guilh\Desktop\Projetos\Exemplo_POO\uAviao.pas</Transaction>
+    <Transaction>2020/04/23 15:01:34.954,=C:\Users\guilh\Desktop\Projetos\Exemplo_POO\uCarro.pas</Transaction>
+    <Transaction>2020/04/23 15:01:34.972,=C:\Users\guilh\Desktop\Projetos\Exemplo_POO\uMeioTransporte.pas</Transaction>
+    <Transaction>2020/04/23 15:36:29.088,=vcl.dcp</Transaction>
+    <Transaction>2020/04/23 16:27:55.094,=C:\Users\guilh\Desktop\Projetos\Exemplo_POO\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

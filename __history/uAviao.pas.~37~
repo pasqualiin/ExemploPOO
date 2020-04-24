@@ -7,7 +7,7 @@ uses uMeioTransporte;
 type
   TAviao = class(TMeioTransporte)
   private
-    HorasVoo: integer;
+    FHorasVoo: integer;
     function GetHorasVoo: integer;
     procedure SetHorasVoo(const Value: integer);
 
@@ -16,9 +16,10 @@ type
 
   public
     procedure Mover(); override;
+    constructor Create;
 
   published
-  property HorasVoo
+    property HorasVoo: integer read GetHorasVoo write SetHorasVoo;
   end;
 
 implementation
@@ -29,8 +30,12 @@ uses Dialogs;
 
 constructor TAviao.Create;
 begin
-  inherited;
   HorasVoo := 0;
+end;
+
+function TAviao.GetHorasVoo: integer;
+begin
+  result := FHorasVoo;
 end;
 
 procedure TAviao.Ligar;
@@ -42,6 +47,14 @@ procedure TAviao.Mover();
 begin
   inherited;
   ShowMessage(Descricao + ' está Voando.');
+end;
+
+procedure TAviao.SetHorasVoo(const Value: integer);
+begin
+  if Value < 0 then
+    FHorasVoo := 0
+  else
+    FHorasVoo := Value;
 end;
 
 end.

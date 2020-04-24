@@ -9,7 +9,6 @@ type
   TPessoa = class(TComponent)
   private
     FNome: String;
-    FTransporte: TMeioTransporte;
     procedure SetNome(const Value: String);
     { Private declarations }
   protected

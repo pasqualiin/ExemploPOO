@@ -2,10 +2,10 @@ unit uMeioTransporte;
 
 interface
 
-uses Dialogs;
+uses Classes;
 
 type
-  TMeioTransporte = class
+  TMeioTransporte = class(TComponent)
 
   private
     FDescricao: string;
@@ -15,24 +15,23 @@ type
     procedure Ligar(); virtual; abstract;
 
   public
+    constructor Create(AOwner: TComponent); override;
     procedure Mover; virtual;
-    constructor Create();
-    destructor Destroy(); override;
+
+  published
+    property Capacidade: integer read FCapacidade write FCapacidade;
+    property Descricao: string read FDescricao write FDescricao;
   end;
 
 implementation
 
 { TMeioTransporte }
 
+uses Dialogs;
+
 constructor TMeioTransporte.Create;
 begin
-  Descricao := 'Sem nome';
-  Capacidade := 0;
-end;
 
-destructor TMeioTransporte.Destroy;
-begin
-  inherited;
 end;
 
 procedure TMeioTransporte.Mover;

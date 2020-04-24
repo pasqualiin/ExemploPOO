@@ -27,7 +27,7 @@ implementation
 
 { TMeioTransporte }
 
-uses Dialogs;
+uses Vcl.Dialogs;
 
 constructor TMeioTransporte.Create(AOwner: TComponent);
 begin

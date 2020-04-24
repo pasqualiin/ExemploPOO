@@ -15,7 +15,6 @@ type
     procedure Ligar(); virtual; abstract;
 
   public
-    constructor Create(AOwner: TComponent); override;
     procedure Mover; virtual;
 
   published
@@ -28,11 +27,6 @@ implementation
 { TMeioTransporte }
 
 uses Dialogs;
-
-constructor TMeioTransporte.Create(AOwner: TComponent);
-begin
-
-end;
 
 procedure TMeioTransporte.Mover;
 begin

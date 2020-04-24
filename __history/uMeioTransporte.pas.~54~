@@ -29,7 +29,7 @@ implementation
 
 uses Dialogs;
 
-constructor TMeioTransporte.Create(AOwner: TComponent);
+constructor TMeioTransporte.Create(AOwner:TComponent);
 begin
 
 end;

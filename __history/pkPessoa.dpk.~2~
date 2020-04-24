@@ -28,13 +28,9 @@ package pkPessoa;
 {$IMPLICITBUILD ON}
 
 requires
-  rtl,
-  vcl;
+  rtl;
 
 contains
-  uPessoa in 'uPessoa.pas',
-  uAviao in 'uAviao.pas',
-  uCarro in 'uCarro.pas',
-  uMeioTransporte in 'uMeioTransporte.pas';
+  uPessoa in 'uPessoa.pas';
 
 end.

@@ -2,7 +2,7 @@ unit uCarro;
 
 interface
 
-uses uMeioTransporte;
+uses uMeioTransporte, Classes;
 
 type
   TCarro = class(TMeioTransporte)
@@ -17,12 +17,14 @@ type
 
   public
     procedure Mover(); override;
-    constructor Create;
+    constructor Create(AOwner: TComponent); override;
 
   published
     property Quilometragem: integer read GetQuilometragem
       write SetQuilometragem;
   end;
+
+procedure Register;
 
 implementation
 
@@ -30,9 +32,12 @@ uses Dialogs;
 
 { TCarro }
 
-constructor TCarro.Create;
+procedure Register;
 begin
-  inherited;
+  RegisterComponents('ClubeDelphi', [TCarro])
+end;
+constructor TCarro.Create(AOwner: TComponent);
+begin
   Quilometragem := 0;
 end;
 

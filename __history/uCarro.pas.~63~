@@ -2,7 +2,7 @@ unit uCarro;
 
 interface
 
-uses uMeioTransporte;
+uses uMeioTransporte, Classes;
 
 type
   TCarro = class(TMeioTransporte)
@@ -17,12 +17,13 @@ type
 
   public
     procedure Mover(); override;
-    constructor Create;
+    constructor Create(AOwner: TComponent); override;
 
   published
     property Quilometragem: integer read GetQuilometragem
       write SetQuilometragem;
   end;
+
 
 implementation
 
@@ -32,7 +33,6 @@ uses Dialogs;
 
 constructor TCarro.Create;
 begin
-  inherited;
   Quilometragem := 0;
 end;
 
@@ -56,8 +56,8 @@ procedure TCarro.SetQuilometragem(const Value: integer);
 begin
   if Value < 0 then
     FQuilometragem := 0
-else
-  FQuilometragem := Value;
+  else
+    FQuilometragem := Value;
 
 end;
 

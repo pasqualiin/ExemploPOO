@@ -2,7 +2,7 @@ unit uAviao;
 
 interface
 
-uses uMeioTransporte;
+uses uMeioTransporte, Classes;
 
 type
   TAviao = class(TMeioTransporte)
@@ -16,21 +16,26 @@ type
 
   public
     procedure Mover(); override;
-    constructor Create;
+    constructor Create(AOwner: TComponent); override;
 
   published
     property HorasVoo: integer read GetHorasVoo write SetHorasVoo;
   end;
+
+procedure Register;
 
 implementation
 
 uses Dialogs;
 
 { TAviao }
-
-constructor TAviao.Create;
+procedure Register;
 begin
-  inherited;
+  RegisterComponents('ClubeDelphi', [TAviao])
+end;
+
+constructor TAviao.Create(AOwner: TComponent);
+begin
   HorasVoo := 0;
 end;
 
